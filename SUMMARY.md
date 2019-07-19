@@ -14,7 +14,7 @@
   * [action](node-js-api-1/modules/action.md)
   * [device](node-js-api-1/modules/device.md)
   * [house](node-js-api-1/modules/house.md)
-  * [plugin]node-js-api-1/(modules/plugin.md)
+  * [plugin](node-js-api-1/modules/plugin.md)
   * [room](node-js-api-1/modules/room.md)
   * [satellite](node-js-api-1/modules/satellite.md)
   * [scene](node-js-api-1/modules/scene.md)
