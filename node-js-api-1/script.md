@@ -1,22 +1,20 @@
-# script
+**friday-server**
 
-> [**friday-server**](./)
+> [README](../README.md) / [Globals](../globals.md) / script
 
-[Globals](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/globals.md) / [script](script.md) /
+# Module: script
 
-## External module: script
+## Index
 
-#### Index
+### Classes
 
-**Classes**
+* [Script](../classes/script.script-1.md)
 
-* [Script](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/classes/script.script-1.md)
+### Interfaces
 
-**Interfaces**
+* [ScriptType](../interfaces/script.scripttype.md)
 
-* [ScriptType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/script.scripttype.md)
-
-**Functions**
+### Functions
 
 * [create](script.md#create)
 * [destroy](script.md#destroy)
@@ -24,135 +22,139 @@
 * [getById](script.md#getbyid)
 * [update](script.md#update)
 
-### Functions
+## Functions
 
-#### create
+### create
 
-▸ **create**\(`script`: [ScriptType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/script.scripttype.md)\): _`Promise<ScriptType>`_
+▸ **create**(`script`: [ScriptType](../interfaces/script.scripttype.md)): Promise\<[ScriptType](../interfaces/script.scripttype.md)>
 
-Defined in script/script.create.ts:19
+*Defined in [src/core/script/script.create.ts:18](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/script/script.create.ts#L18)*
 
 Create a script.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.script.create({
    id: '65e0a906-8b35-49ed-87ba-e30c450a715d',
    name: 'Sample script',
    code: 'console.log(\'Hey ! This script is a sample ! :)\')'
 });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `script` | [ScriptType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/script.scripttype.md) | A script object. |
+Name | Type | Description |
+------ | ------ | ------ |
+`script` | [ScriptType](../interfaces/script.scripttype.md) | A script object. |
 
-**Returns:** _`Promise<ScriptType>`_
+**Returns:** Promise\<[ScriptType](../interfaces/script.scripttype.md)>
 
 Resolve with created script.
 
-#### destroy
+___
 
-▸ **destroy**\(`id`: string\): _`Promise<void>`_
+### destroy
 
-Defined in script/script.destroy.ts:14
+▸ **destroy**(`id`: string): Promise\<void>
+
+*Defined in [src/core/script/script.destroy.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/script/script.destroy.ts#L13)*
 
 Destroy a script.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.script.destroy('95ea9fef-5082-4851-8f3f-3fa93be2b049');
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `id` | string | Id of script. |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of script. |
 
-**Returns:** _`Promise<void>`_
+**Returns:** Promise\<void>
 
-#### getAll
+___
 
-▸ **getAll**\(`options?`: `GetOptions`\): _`Promise<ScriptType[]>`_
+### getAll
 
-Defined in script/script.getAll.ts:26
+▸ **getAll**(`options?`: GetOptions): Promise\<[ScriptType](../interfaces/script.scripttype.md)[]>
+
+*Defined in [src/core/script/script.getAll.ts:25](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/script/script.getAll.ts#L25)*
 
 Get all scripts.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.script.getAll({
    scope: '',
    take: 20,
    skip: 0
  });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `options?` | `GetOptions` | Options of the query. |
+Name | Type | Description |
+------ | ------ | ------ |
+`options?` | GetOptions | Options of the query. |
 
-**Returns:** _`Promise<ScriptType[]>`_
+**Returns:** Promise\<[ScriptType](../interfaces/script.scripttype.md)[]>
 
 Resolve with script array.
 
-#### getById
+___
 
-▸ **getById**\(`id`: string, `scope?`: undefined \| string\): _`Promise<ScriptType>`_
+### getById
 
-Defined in script/script.getById.ts:16
+▸ **getById**(`id`: string): Promise\<[ScriptType](../interfaces/script.scripttype.md)>
+
+*Defined in [src/core/script/script.getById.ts:14](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/script/script.getById.ts#L14)*
 
 Get a script by id.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.script.getById('e16be2ff-9ee3-4373-8b40-9f0a2ff04ed3', 'full');
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `id` | string | Id of script. |
-| `scope?` | undefined \| string | Scope option. \(Optional\) |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of script. |
 
-**Returns:** _`Promise<ScriptType>`_
+**Returns:** Promise\<[ScriptType](../interfaces/script.scripttype.md)>
 
 Resolve with script.
 
-#### update
+___
 
-▸ **update**\(`script`: [ScriptType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/script.scripttype.md)\): _`Promise<ScriptType>`_
+### update
 
-Defined in script/script.update.ts:18
+▸ **update**(`id`: string, `script`: [ScriptType](../interfaces/script.scripttype.md)): Promise\<[ScriptType](../interfaces/script.scripttype.md)>
+
+*Defined in [src/core/script/script.update.ts:20](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/script/script.update.ts#L20)*
 
 Update a script.
 
-**`example`**
-
-```text
-friday.script.update({
+**`example`** 
+````
+friday.script.update(
+'fc5700be-8ed2-4540-a59e-a8572d8c41c5',
+{
   id: 'fc5700be-8ed2-4540-a59e-a8572d8c41c5'
   name: 'script update'
 });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `script` | [ScriptType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/script.scripttype.md) | A script object. |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of script |
+`script` | [ScriptType](../interfaces/script.scripttype.md) | A script object. |
 
-**Returns:** _`Promise<ScriptType>`_
+**Returns:** Promise\<[ScriptType](../interfaces/script.scripttype.md)>
 
 Resolve with updated script.
-

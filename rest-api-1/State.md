@@ -7,7 +7,6 @@
 ___
 
 
-
 {% api-method method="get" host=" " path="/api/v1/state/:id" %}{% api-method-summary %}getByOwner{% endapi-method-summary %}
 
 {% api-method-description %}
@@ -20,7 +19,7 @@ ___
 {% api-method-path-parameters %}
 {% endapi-method-path-parameters %}
 
-{% api-method-headers %}
+{% api-method-headers %} 
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
@@ -49,7 +48,6 @@ Success-Response
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
 {% api-method method="patch" host=" " path="/api/v1/state" %}{% api-method-summary %}set{% endapi-method-summary %}
 
 {% api-method-description %}
@@ -62,7 +60,7 @@ Success-Response
 {% api-method-path-parameters %}
 {% endapi-method-path-parameters %}
 
-{% api-method-headers %}
+{% api-method-headers %} 
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}

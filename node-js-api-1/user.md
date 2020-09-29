@@ -1,42 +1,40 @@
-# user
+**friday-server**
 
-> [**friday-server**](./)
+> [README](../README.md) / [Globals](../globals.md) / user
 
-[Globals](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/globals.md) / [user](user.md) /
+# Module: user
 
-## External module: user
+## Index
 
-#### Index
+### Classes
 
-**Classes**
+* [User](../classes/user.user-1.md)
 
-* [User](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/classes/user.user-1.md)
+### Interfaces
 
-**Interfaces**
+* [UserType](../interfaces/user.usertype.md)
 
-* [UserType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/user.usertype.md)
-
-**Functions**
+### Functions
 
 * [create](user.md#create)
 * [destroy](user.md#destroy)
 * [getAll](user.md#getall)
 * [getById](user.md#getbyid)
+* [getCount](user.md#getcount)
 * [update](user.md#update)
 
-### Functions
+## Functions
 
-#### create
+### create
 
-▸ **create**\(`user`: [UserType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/user.usertype.md)\): _`Promise<UserType>`_
+▸ **create**(`user`: [UserType](../interfaces/user.usertype.md)): Promise\<[UserType](../interfaces/user.usertype.md)>
 
-Defined in user/user.create.ts:22
+*Defined in [src/core/user/user.create.ts:23](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/user/user.create.ts#L23)*
 
 Create a user.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.user.create({
    id: '87d636b2-fa65-4f0e-ae04-622562f62c31',
    name: 'Pepperwood',
@@ -45,117 +43,142 @@ friday.user.create({
    password: 'mysupersamplepassword',
    birthDate: new Date(1996, 12, 20)
 });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `user` | [UserType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/user.usertype.md) | A user object. |
+Name | Type | Description |
+------ | ------ | ------ |
+`user` | [UserType](../interfaces/user.usertype.md) | A user object. |
 
-**Returns:** _`Promise<UserType>`_
+**Returns:** Promise\<[UserType](../interfaces/user.usertype.md)>
 
 Resolve with created user.
 
-#### destroy
+___
 
-▸ **destroy**\(`id`: string\): _`Promise<void>`_
+### destroy
 
-Defined in user/user.destroy.ts:14
+▸ **destroy**(`id`: string): Promise\<void>
+
+*Defined in [src/core/user/user.destroy.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/user/user.destroy.ts#L13)*
 
 Destroy a user.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.user.destroy('e8768abf-f6c9-4689-9ca4-2fe663e4ce9f');
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `id` | string | Id of user. |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of user. |
 
-**Returns:** _`Promise<void>`_
+**Returns:** Promise\<void>
 
-#### getAll
+___
 
-▸ **getAll**\(`options?`: `GetOptions`\): _`Promise<UserType[]>`_
+### getAll
 
-Defined in user/user.getAll.ts:26
+▸ **getAll**(`options?`: GetOptions): Promise\<[UserType](../interfaces/user.usertype.md)[]>
+
+*Defined in [src/core/user/user.getAll.ts:25](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/user/user.getAll.ts#L25)*
 
 GEt all users.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.user.getAll({
    scope: '',
    take: 20,
    skip: 0
  });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `options?` | `GetOptions` | Options of the query. |
+Name | Type | Description |
+------ | ------ | ------ |
+`options?` | GetOptions | Options of the query. |
 
-**Returns:** _`Promise<UserType[]>`_
+**Returns:** Promise\<[UserType](../interfaces/user.usertype.md)[]>
 
 Resolve with user array.
 
-#### getById
+___
 
-▸ **getById**\(`id`: string, `scope?`: undefined \| string\): _`Promise<UserType>`_
+### getById
 
-Defined in user/user.getById.ts:17
+▸ **getById**(`id`: string, `scope?`: undefined \| string): Promise\<[UserType](../interfaces/user.usertype.md)>
+
+*Defined in [src/core/user/user.getById.ts:15](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/user/user.getById.ts#L15)*
 
 Get a user by id.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.user.getById('a8ba342e-854a-4906-8670-d400c868bdb1', 'full');
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `id` | string | Id of user. |
-| `scope?` | undefined \| string | Scope option. \(Optional\) |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of user. |
+`scope?` | undefined \| string | Scope option. (Optional) |
 
-**Returns:** _`Promise<UserType>`_
+**Returns:** Promise\<[UserType](../interfaces/user.usertype.md)>
 
 Resolve with user.
 
-#### update
+___
 
-▸ **update**\(`user`: [UserType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/user.usertype.md)\): _`Promise<UserType>`_
+### getCount
 
-Defined in user/user.update.ts:18
+▸ **getCount**(): Promise\<number>
+
+*Defined in [src/core/user/user.getCount.ts:12](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/user/user.getCount.ts#L12)*
+
+Get count of users.
+
+**`example`** 
+````
+friday.user.getCount();
+````
+
+**Returns:** Promise\<number>
+
+Resolve with number of users.
+
+___
+
+### update
+
+▸ **update**(`id`: string, `user`: [UserType](../interfaces/user.usertype.md)): Promise\<[UserType](../interfaces/user.usertype.md)>
+
+*Defined in [src/core/user/user.update.ts:20](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/user/user.update.ts#L20)*
 
 Update a user.
 
-**`example`**
-
-```text
-friday.user.update({
+**`example`** 
+````
+friday.user.update(
+'f8be3bad-3d46-4009-b965-fe03a4d6d5f1',
+{
   id: 'f8be3bad-3d46-4009-b965-fe03a4d6d5f1'
   name: 'user update'
 });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `user` | [UserType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/user.usertype.md) | A user object. |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of user |
+`user` | [UserType](../interfaces/user.usertype.md) | A user object. |
 
-**Returns:** _`Promise<UserType>`_
+**Returns:** Promise\<[UserType](../interfaces/user.usertype.md)>
 
 Resolve with updated user.
-

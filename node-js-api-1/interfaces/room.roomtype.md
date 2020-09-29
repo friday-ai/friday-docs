@@ -1,6 +1,6 @@
-> **[friday-server](../README.md)**
+**friday-server**
 
-[Globals](../globals.md) / [room](../modules/room.md) / [RoomType](room.roomtype.md) /
+> [README](../README.md) / [Globals](../globals.md) / [room](../modules/room.md) / RoomType
 
 # Interface: RoomType
 
@@ -10,70 +10,70 @@ Room interface.
 
 * **RoomType**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
-* [devices](room.roomtype.md#optional-devices)
-* [house](room.roomtype.md#optional-house)
-* [houseId](room.roomtype.md#optional-houseid)
+* [devices](room.roomtype.md#devices)
+* [house](room.roomtype.md#house)
+* [houseId](room.roomtype.md#houseid)
 * [id](room.roomtype.md#id)
-* [name](room.roomtype.md#optional-name)
-* [satellites](room.roomtype.md#optional-satellites)
-* [state](room.roomtype.md#optional-state)
+* [name](room.roomtype.md#name)
+* [satellites](room.roomtype.md#satellites)
+* [state](room.roomtype.md#state)
 
 ## Properties
 
-### `Optional` devices
+### devices
 
-• **devices**? : *`Array<Devices[]>`*
+• `Optional` **devices**: Array\<Devices[]>
 
-Defined in room/room.interface.ts:14
-
-___
-
-### `Optional` house
-
-• **house**? : *[HouseType](house.housetype.md)*
-
-Defined in room/room.interface.ts:13
+*Defined in [src/core/room/room.interface.ts:14](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/room/room.interface.ts#L14)*
 
 ___
 
-### `Optional` houseId
+### house
 
-• **houseId**? : *undefined | string*
+• `Optional` **house**: [HouseType](house.housetype.md)
 
-Defined in room/room.interface.ts:12
-
-___
-
-###  id
-
-• **id**: *string*
-
-Defined in room/room.interface.ts:10
+*Defined in [src/core/room/room.interface.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/room/room.interface.ts#L13)*
 
 ___
 
-### `Optional` name
+### houseId
 
-• **name**? : *undefined | string*
+• `Optional` **houseId**: undefined \| string
 
-Defined in room/room.interface.ts:11
-
-___
-
-### `Optional` satellites
-
-• **satellites**? : *`Array<SatelliteType[]>`*
-
-Defined in room/room.interface.ts:16
+*Defined in [src/core/room/room.interface.ts:12](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/room/room.interface.ts#L12)*
 
 ___
 
-### `Optional` state
+### id
 
-• **state**? : *[StateType](state.statetype.md)*
+• `Optional` **id**: undefined \| string
 
-Defined in room/room.interface.ts:15
+*Defined in [src/core/room/room.interface.ts:10](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/room/room.interface.ts#L10)*
+
+___
+
+### name
+
+• `Optional` **name**: undefined \| string
+
+*Defined in [src/core/room/room.interface.ts:11](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/room/room.interface.ts#L11)*
+
+___
+
+### satellites
+
+• `Optional` **satellites**: Array\<[SatelliteType](satellite.satellitetype.md)[]>
+
+*Defined in [src/core/room/room.interface.ts:16](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/room/room.interface.ts#L16)*
+
+___
+
+### state
+
+• `Optional` **state**: [StateType](state.statetype.md)
+
+*Defined in [src/core/room/room.interface.ts:15](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/room/room.interface.ts#L15)*

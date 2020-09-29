@@ -1,6 +1,6 @@
-> **[friday-server](../README.md)**
+**friday-server**
 
-[Globals](../globals.md) / [action](../modules/action.md) / [Action](action.action-1.md) /
+> [README](../README.md) / [Globals](../globals.md) / [action](../modules/action.md) / Action
 
 # Class: Action
 
@@ -10,52 +10,52 @@ Action
 
 * **Action**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [create](action.action-1.md#create)
-* [destoy](action.action-1.md#destoy)
+* [destroy](action.action-1.md#destroy)
 * [getAll](action.action-1.md#getall)
 * [getById](action.action-1.md#getbyid)
 * [update](action.action-1.md#update)
 
 ## Properties
 
-###  create
+### create
 
-• **create**: *[create](../modules/action.md#create)* =  create
+•  **create**: [create](../modules/action.md#create) = create
 
-Defined in action/index.ts:11
-
-___
-
-###  destoy
-
-• **destoy**: *[destroy](../modules/action.md#destroy)* =  destroy
-
-Defined in action/index.ts:13
+*Defined in [src/core/action/index.ts:11](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/action/index.ts#L11)*
 
 ___
 
-###  getAll
+### destroy
 
-• **getAll**: *[getAll](../modules/action.md#getall)* =  getAll
+•  **destroy**: [destroy](../modules/action.md#destroy) = destroy
 
-Defined in action/index.ts:14
-
-___
-
-###  getById
-
-• **getById**: *[getById](../modules/action.md#getbyid)* =  getById
-
-Defined in action/index.ts:15
+*Defined in [src/core/action/index.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/action/index.ts#L13)*
 
 ___
 
-###  update
+### getAll
 
-• **update**: *[update](../modules/action.md#update)* =  update
+•  **getAll**: [getAll](../modules/action.md#getall) = getAll
 
-Defined in action/index.ts:12
+*Defined in [src/core/action/index.ts:14](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/action/index.ts#L14)*
+
+___
+
+### getById
+
+•  **getById**: [getById](../modules/action.md#getbyid) = getById
+
+*Defined in [src/core/action/index.ts:15](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/action/index.ts#L15)*
+
+___
+
+### update
+
+•  **update**: [update](../modules/action.md#update) = update
+
+*Defined in [src/core/action/index.ts:12](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/action/index.ts#L12)*

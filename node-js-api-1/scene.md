@@ -1,22 +1,20 @@
-# scene
+**friday-server**
 
-> [**friday-server**](./)
+> [README](../README.md) / [Globals](../globals.md) / scene
 
-[Globals](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/globals.md) / [scene](scene.md) /
+# Module: scene
 
-## External module: scene
+## Index
 
-#### Index
+### Classes
 
-**Classes**
+* [Scene](../classes/scene.scene-1.md)
 
-* [Scene](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/classes/scene.scene-1.md)
+### Interfaces
 
-**Interfaces**
+* [SceneType](../interfaces/scene.scenetype.md)
 
-* [SceneType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/scene.scenetype.md)
-
-**Functions**
+### Functions
 
 * [create](scene.md#create)
 * [destroy](scene.md#destroy)
@@ -24,135 +22,140 @@
 * [getById](scene.md#getbyid)
 * [update](scene.md#update)
 
-### Functions
+## Functions
 
-#### create
+### create
 
-▸ **create**\(`scene`: [SceneType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/scene.scenetype.md)\): _`Promise<SceneType>`_
+▸ **create**(`scene`: [SceneType](../interfaces/scene.scenetype.md)): Promise\<[SceneType](../interfaces/scene.scenetype.md)>
 
-Defined in scene/scene.create.ts:19
+*Defined in [src/core/scene/scene.create.ts:18](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/scene/scene.create.ts#L18)*
 
 Create a scene.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.scene.create({
    id: 'e49c0809-7f51-4f0c-842f-36461b7bd18a',
    name: 'Sample scene',
    description: 'A sample to create a scene'
 });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `scene` | [SceneType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/scene.scenetype.md) | A scene object. |
+Name | Type | Description |
+------ | ------ | ------ |
+`scene` | [SceneType](../interfaces/scene.scenetype.md) | A scene object. |
 
-**Returns:** _`Promise<SceneType>`_
+**Returns:** Promise\<[SceneType](../interfaces/scene.scenetype.md)>
 
 Resolve with created scene.
 
-#### destroy
+___
 
-▸ **destroy**\(`id`: string\): _`Promise<void>`_
+### destroy
 
-Defined in scene/scene.destroy.ts:14
+▸ **destroy**(`id`: string): Promise\<void>
+
+*Defined in [src/core/scene/scene.destroy.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/scene/scene.destroy.ts#L13)*
 
 Destroy a scene.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.scene.destroy('36707443-fba9-4fbd-9aa6-4715f5a63ff9');
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `id` | string | Id of scene. |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of scene. |
 
-**Returns:** _`Promise<void>`_
+**Returns:** Promise\<void>
 
-#### getAll
+___
 
-▸ **getAll**\(`options?`: `GetOptions`\): _`Promise<SceneType[]>`_
+### getAll
 
-Defined in scene/scene.getAll.ts:26
+▸ **getAll**(`options?`: GetOptions): Promise\<[SceneType](../interfaces/scene.scenetype.md)[]>
+
+*Defined in [src/core/scene/scene.getAll.ts:25](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/scene/scene.getAll.ts#L25)*
 
 Get all scenes.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.scene.getAll({
    scope: '',
    take: 20,
    skip: 0
  });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `options?` | `GetOptions` | Options of the query. |
+Name | Type | Description |
+------ | ------ | ------ |
+`options?` | GetOptions | Options of the query. |
 
-**Returns:** _`Promise<SceneType[]>`_
+**Returns:** Promise\<[SceneType](../interfaces/scene.scenetype.md)[]>
 
 Resolve with scene array.
 
-#### getById
+___
 
-▸ **getById**\(`id`: string, `scope?`: undefined \| string\): _`Promise<SceneType>`_
+### getById
 
-Defined in scene/scene.getById.ts:16
+▸ **getById**(`id`: string, `scope?`: undefined \| string): Promise\<[SceneType](../interfaces/scene.scenetype.md)>
+
+*Defined in [src/core/scene/scene.getById.ts:15](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/scene/scene.getById.ts#L15)*
 
 Get a scene by id.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.scene.getById('d0766a83-68e7-44aa-9124-f8e5fa137304', 'full');
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `id` | string | Id of scene. |
-| `scope?` | undefined \| string | Scope option. \(Optional\) |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of scene. |
+`scope?` | undefined \| string | Scope option. (Optional) |
 
-**Returns:** _`Promise<SceneType>`_
+**Returns:** Promise\<[SceneType](../interfaces/scene.scenetype.md)>
 
 Resolve with scene.
 
-#### update
+___
 
-▸ **update**\(`scene`: [SceneType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/scene.scenetype.md)\): _`Promise<SceneType>`_
+### update
 
-Defined in scene/scene.update.ts:18
+▸ **update**(`id`: string, `scene`: [SceneType](../interfaces/scene.scenetype.md)): Promise\<[SceneType](../interfaces/scene.scenetype.md)>
+
+*Defined in [src/core/scene/scene.update.ts:20](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/scene/scene.update.ts#L20)*
 
 Update a scene.
 
-**`example`**
-
-```text
-friday.scene.update({
+**`example`** 
+````
+friday.scene.update(
+'30967a17-8e13-4460-afa0-1069fa890c4e',
+{
   id: '30967a17-8e13-4460-afa0-1069fa890c4e'
   name: 'scene update'
 });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `scene` | [SceneType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/scene.scenetype.md) | A scene object. |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of scene |
+`scene` | [SceneType](../interfaces/scene.scenetype.md) | A scene object. |
 
-**Returns:** _`Promise<SceneType>`_
+**Returns:** Promise\<[SceneType](../interfaces/scene.scenetype.md)>
 
 Resolve with updated scene.
-

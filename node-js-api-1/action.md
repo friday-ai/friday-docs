@@ -1,22 +1,20 @@
-# action
+**friday-server**
 
-> [**friday-server**](./)
+> [README](../README.md) / [Globals](../globals.md) / action
 
-[Globals](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/globals.md) / [action](action.md) /
+# Module: action
 
-## External module: action
+## Index
 
-#### Index
+### Classes
 
-**Classes**
+* [Action](../classes/action.action-1.md)
 
-* [Action](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/classes/action.action-1.md)
+### Interfaces
 
-**Interfaces**
+* [ActionType](../interfaces/action.actiontype.md)
 
-* [ActionType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/action.actiontype.md)
-
-**Functions**
+### Functions
 
 * [create](action.md#create)
 * [destroy](action.md#destroy)
@@ -24,19 +22,18 @@
 * [getById](action.md#getbyid)
 * [update](action.md#update)
 
-### Functions
+## Functions
 
-#### create
+### create
 
-▸ **create**\(`action`: [ActionType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/action.actiontype.md)\): _`Promise<ActionType>`_
+▸ **create**(`action`: [ActionType](../interfaces/action.actiontype.md)): Promise\<[ActionType](../interfaces/action.actiontype.md)>
 
-Defined in action/action.create.ts:25
+*Defined in [src/core/action/action.create.ts:23](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/action/action.create.ts#L23)*
 
 Create an action
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.action.create({
    id: '53dd38a4-f462-4021-a82f-92aca2aa8dea',
    name: 'action sample',
@@ -47,119 +44,123 @@ friday.action.create({
    variableValue: 'action sample variable value',
    sceneId: '8a7823aa-8ec9-4169-b5b9-40ad52804f67'
 });
-```
+````
 
-**`memberof`** Action
+#### Parameters:
 
-**Parameters:**
+Name | Type | Description |
+------ | ------ | ------ |
+`action` | [ActionType](../interfaces/action.actiontype.md) | An action object. |
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `action` | [ActionType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/action.actiontype.md) | An action object. |
-
-**Returns:** _`Promise<ActionType>`_
+**Returns:** Promise\<[ActionType](../interfaces/action.actiontype.md)>
 
 Resolve with created action.
 
-#### destroy
+___
 
-▸ **destroy**\(`id`: string\): _`Promise<void>`_
+### destroy
 
-Defined in action/action.destroy.ts:14
+▸ **destroy**(`id`: string): Promise\<void>
+
+*Defined in [src/core/action/action.destroy.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/action/action.destroy.ts#L13)*
 
 Destroy an action
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.action.destroy('f2d7df99-8b3b-4994-86eb-400a1a951ba0');
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `id` | string | Id of action. |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of action. |
 
-**Returns:** _`Promise<void>`_
+**Returns:** Promise\<void>
 
-#### getAll
+___
 
-▸ **getAll**\(`options?`: `GetOptions`\): _`Promise<ActionType[]>`_
+### getAll
 
-Defined in action/action.getAll.ts:26
+▸ **getAll**(`options?`: GetOptions): Promise\<[ActionType](../interfaces/action.actiontype.md)[]>
+
+*Defined in [src/core/action/action.getAll.ts:25](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/action/action.getAll.ts#L25)*
 
 Get all actions
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.action.getAll({
     scope: '',
     take: 20,
     skip: 0
   });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `options?` | `GetOptions` | Options of the query. |
+Name | Type | Description |
+------ | ------ | ------ |
+`options?` | GetOptions | Options of the query. |
 
-**Returns:** _`Promise<ActionType[]>`_
+**Returns:** Promise\<[ActionType](../interfaces/action.actiontype.md)[]>
 
 Resolve with action array.
 
-#### getById
+___
 
-▸ **getById**\(`id`: string, `scope?`: undefined \| string\): _`Promise<ActionType>`_
+### getById
 
-Defined in action/action.getById.ts:16
+▸ **getById**(`id`: string, `scope?`: undefined \| string): Promise\<[ActionType](../interfaces/action.actiontype.md)>
+
+*Defined in [src/core/action/action.getById.ts:15](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/action/action.getById.ts#L15)*
 
 Get action by id
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.device.getById('0480d9b4-0968-491a-8693-b1788ae0dc7d', 'full');
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `id` | string | Id of action. |
-| `scope?` | undefined \| string | Scope option. \(Optional\) |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of action. |
+`scope?` | undefined \| string | Scope option. (Optional) |
 
-**Returns:** _`Promise<ActionType>`_
+**Returns:** Promise\<[ActionType](../interfaces/action.actiontype.md)>
 
 Resolve with action.
 
-#### update
+___
 
-▸ **update**\(`action`: [ActionType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/action.actiontype.md)\): _`Promise<ActionType>`_
+### update
 
-Defined in action/action.update.ts:18
+▸ **update**(`id`: string, `action`: [ActionType](../interfaces/action.actiontype.md)): Promise\<[ActionType](../interfaces/action.actiontype.md)>
+
+*Defined in [src/core/action/action.update.ts:20](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/action/action.update.ts#L20)*
 
 Update an action
 
-**`example`**
-
-```text
-friday.action.update({
+**`example`** 
+````
+friday.action.update(
+'16c40480-c19f-4ab5-9caf-a93a4fa1e890',
+{
   id: '16c40480-c19f-4ab5-9caf-a93a4fa1e890'
   name: 'action update'
 });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `action` | [ActionType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/action.actiontype.md) | An action object. |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of action. |
+`action` | [ActionType](../interfaces/action.actiontype.md) | An action object. |
 
-**Returns:** _`Promise<ActionType>`_
+**Returns:** Promise\<[ActionType](../interfaces/action.actiontype.md)>
 
 Resolve with updated action.
-

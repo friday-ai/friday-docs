@@ -1,6 +1,6 @@
-> **[friday-server](../README.md)**
+**friday-server**
 
-[Globals](../globals.md) / [plugin](../modules/plugin.md) / [PluginType](plugin.plugintype.md) /
+> [README](../README.md) / [Globals](../globals.md) / [plugin](../modules/plugin.md) / PluginType
 
 # Interface: PluginType
 
@@ -10,97 +10,97 @@ Plugin interface.
 
 * **PluginType**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
-* [devices](plugin.plugintype.md#optional-devices)
-* [enabled](plugin.plugintype.md#optional-enabled)
+* [devices](plugin.plugintype.md#devices)
+* [enabled](plugin.plugintype.md#enabled)
 * [id](plugin.plugintype.md#id)
-* [name](plugin.plugintype.md#optional-name)
-* [satellite](plugin.plugintype.md#optional-satellite)
-* [satelliteId](plugin.plugintype.md#optional-satelliteid)
-* [state](plugin.plugintype.md#optional-state)
-* [url](plugin.plugintype.md#optional-url)
-* [variables](plugin.plugintype.md#optional-variables)
-* [version](plugin.plugintype.md#optional-version)
+* [name](plugin.plugintype.md#name)
+* [satellite](plugin.plugintype.md#satellite)
+* [satelliteId](plugin.plugintype.md#satelliteid)
+* [state](plugin.plugintype.md#state)
+* [url](plugin.plugintype.md#url)
+* [variables](plugin.plugintype.md#variables)
+* [version](plugin.plugintype.md#version)
 
 ## Properties
 
-### `Optional` devices
+### devices
 
-• **devices**? : *`Array<DeviceType[]>`*
+• `Optional` **devices**: Array\<[DeviceType](device.devicetype.md)[]>
 
-Defined in plugin/plugin.interface.ts:18
-
-___
-
-### `Optional` enabled
-
-• **enabled**? : *undefined | false | true*
-
-Defined in plugin/plugin.interface.ts:14
+*Defined in [src/core/plugin/plugin.interface.ts:18](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/plugin/plugin.interface.ts#L18)*
 
 ___
 
-###  id
+### enabled
 
-• **id**: *string*
+• `Optional` **enabled**: undefined \| false \| true
 
-Defined in plugin/plugin.interface.ts:10
-
-___
-
-### `Optional` name
-
-• **name**? : *undefined | string*
-
-Defined in plugin/plugin.interface.ts:11
+*Defined in [src/core/plugin/plugin.interface.ts:14](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/plugin/plugin.interface.ts#L14)*
 
 ___
 
-### `Optional` satellite
+### id
 
-• **satellite**? : *[SatelliteType](satellite.satellitetype.md)*
+• `Optional` **id**: undefined \| string
 
-Defined in plugin/plugin.interface.ts:16
-
-___
-
-### `Optional` satelliteId
-
-• **satelliteId**? : *undefined | string*
-
-Defined in plugin/plugin.interface.ts:15
+*Defined in [src/core/plugin/plugin.interface.ts:10](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/plugin/plugin.interface.ts#L10)*
 
 ___
 
-### `Optional` state
+### name
 
-• **state**? : *[StateType](state.statetype.md)*
+• `Optional` **name**: undefined \| string
 
-Defined in plugin/plugin.interface.ts:17
-
-___
-
-### `Optional` url
-
-• **url**? : *undefined | string*
-
-Defined in plugin/plugin.interface.ts:13
+*Defined in [src/core/plugin/plugin.interface.ts:11](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/plugin/plugin.interface.ts#L11)*
 
 ___
 
-### `Optional` variables
+### satellite
 
-• **variables**? : *`Array<VariableType[]>`*
+• `Optional` **satellite**: [SatelliteType](satellite.satellitetype.md)
 
-Defined in plugin/plugin.interface.ts:19
+*Defined in [src/core/plugin/plugin.interface.ts:16](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/plugin/plugin.interface.ts#L16)*
 
 ___
 
-### `Optional` version
+### satelliteId
 
-• **version**? : *undefined | string*
+• `Optional` **satelliteId**: undefined \| string
 
-Defined in plugin/plugin.interface.ts:12
+*Defined in [src/core/plugin/plugin.interface.ts:15](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/plugin/plugin.interface.ts#L15)*
+
+___
+
+### state
+
+• `Optional` **state**: [StateType](state.statetype.md)
+
+*Defined in [src/core/plugin/plugin.interface.ts:17](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/plugin/plugin.interface.ts#L17)*
+
+___
+
+### url
+
+• `Optional` **url**: undefined \| string
+
+*Defined in [src/core/plugin/plugin.interface.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/plugin/plugin.interface.ts#L13)*
+
+___
+
+### variables
+
+• `Optional` **variables**: Array\<[VariableType](variable.variabletype.md)[]>
+
+*Defined in [src/core/plugin/plugin.interface.ts:19](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/plugin/plugin.interface.ts#L19)*
+
+___
+
+### version
+
+• `Optional` **version**: undefined \| string
+
+*Defined in [src/core/plugin/plugin.interface.ts:12](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/plugin/plugin.interface.ts#L12)*

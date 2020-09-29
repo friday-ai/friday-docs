@@ -1,6 +1,6 @@
-> **[friday-server](../README.md)**
+**friday-server**
 
-[Globals](../globals.md) / [plugin](../modules/plugin.md) / [Plugin](plugin.plugin-1.md) /
+> [README](../README.md) / [Globals](../globals.md) / [plugin](../modules/plugin.md) / Plugin
 
 # Class: Plugin
 
@@ -10,52 +10,52 @@ Plugin
 
 * **Plugin**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [create](plugin.plugin-1.md#create)
-* [destoy](plugin.plugin-1.md#destoy)
+* [destroy](plugin.plugin-1.md#destroy)
 * [getAll](plugin.plugin-1.md#getall)
 * [getById](plugin.plugin-1.md#getbyid)
 * [update](plugin.plugin-1.md#update)
 
 ## Properties
 
-###  create
+### create
 
-• **create**: *[create](../modules/plugin.md#create)* =  create
+•  **create**: [create](../modules/plugin.md#create) = create
 
-Defined in plugin/index.ts:11
-
-___
-
-###  destoy
-
-• **destoy**: *[destroy](../modules/plugin.md#destroy)* =  destroy
-
-Defined in plugin/index.ts:13
+*Defined in [src/core/plugin/index.ts:11](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/plugin/index.ts#L11)*
 
 ___
 
-###  getAll
+### destroy
 
-• **getAll**: *[getAll](../modules/plugin.md#getall)* =  getAll
+•  **destroy**: [destroy](../modules/plugin.md#destroy) = destroy
 
-Defined in plugin/index.ts:14
-
-___
-
-###  getById
-
-• **getById**: *[getById](../modules/plugin.md#getbyid)* =  getById
-
-Defined in plugin/index.ts:15
+*Defined in [src/core/plugin/index.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/plugin/index.ts#L13)*
 
 ___
 
-###  update
+### getAll
 
-• **update**: *[update](../modules/plugin.md#update)* =  update
+•  **getAll**: [getAll](../modules/plugin.md#getall) = getAll
 
-Defined in plugin/index.ts:12
+*Defined in [src/core/plugin/index.ts:14](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/plugin/index.ts#L14)*
+
+___
+
+### getById
+
+•  **getById**: [getById](../modules/plugin.md#getbyid) = getById
+
+*Defined in [src/core/plugin/index.ts:15](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/plugin/index.ts#L15)*
+
+___
+
+### update
+
+•  **update**: [update](../modules/plugin.md#update) = update
+
+*Defined in [src/core/plugin/index.ts:12](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/plugin/index.ts#L12)*

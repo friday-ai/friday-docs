@@ -1,6 +1,6 @@
-> **[friday-server](../README.md)**
+**friday-server**
 
-[Globals](../globals.md) / [trigger](../modules/trigger.md) / [TriggerType](trigger.triggertype.md) /
+> [README](../README.md) / [Globals](../globals.md) / [trigger](../modules/trigger.md) / TriggerType
 
 # Interface: TriggerType
 
@@ -10,61 +10,61 @@ Trigger interface.
 
 * **TriggerType**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
-* [description](trigger.triggertype.md#optional-description)
+* [description](trigger.triggertype.md#description)
 * [id](trigger.triggertype.md#id)
-* [name](trigger.triggertype.md#optional-name)
-* [rules](trigger.triggertype.md#optional-rules)
-* [scenes](trigger.triggertype.md#optional-scenes)
-* [type](trigger.triggertype.md#optional-type)
+* [name](trigger.triggertype.md#name)
+* [rules](trigger.triggertype.md#rules)
+* [scenes](trigger.triggertype.md#scenes)
+* [type](trigger.triggertype.md#type)
 
 ## Properties
 
-### `Optional` description
+### description
 
-• **description**? : *undefined | string*
+• `Optional` **description**: undefined \| string
 
-Defined in trigger/trigger.interface.ts:10
-
-___
-
-###  id
-
-• **id**: *string*
-
-Defined in trigger/trigger.interface.ts:8
+*Defined in [src/core/trigger/trigger.interface.ts:10](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/trigger/trigger.interface.ts#L10)*
 
 ___
 
-### `Optional` name
+### id
 
-• **name**? : *undefined | string*
+• `Optional` **id**: undefined \| string
 
-Defined in trigger/trigger.interface.ts:9
-
-___
-
-### `Optional` rules
-
-• **rules**? : *any*
-
-Defined in trigger/trigger.interface.ts:12
+*Defined in [src/core/trigger/trigger.interface.ts:8](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/trigger/trigger.interface.ts#L8)*
 
 ___
 
-### `Optional` scenes
+### name
 
-• **scenes**? : *`Array<Scene[]>`*
+• `Optional` **name**: undefined \| string
 
-Defined in trigger/trigger.interface.ts:13
+*Defined in [src/core/trigger/trigger.interface.ts:9](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/trigger/trigger.interface.ts#L9)*
 
 ___
 
-### `Optional` type
+### rules
 
-• **type**? : *`AvailableConditions`*
+• `Optional` **rules**: any
 
-Defined in trigger/trigger.interface.ts:11
+*Defined in [src/core/trigger/trigger.interface.ts:12](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/trigger/trigger.interface.ts#L12)*
+
+___
+
+### scenes
+
+• `Optional` **scenes**: Array\<[SceneType](scene.scenetype.md)>
+
+*Defined in [src/core/trigger/trigger.interface.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/trigger/trigger.interface.ts#L13)*
+
+___
+
+### type
+
+• `Optional` **type**: AvailableConditions
+
+*Defined in [src/core/trigger/trigger.interface.ts:11](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/trigger/trigger.interface.ts#L11)*

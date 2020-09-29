@@ -1,6 +1,6 @@
-> **[friday-server](../README.md)**
+**friday-server**
 
-[Globals](../globals.md) / [house](../modules/house.md) / [HouseType](house.housetype.md) /
+> [README](../README.md) / [Globals](../globals.md) / [house](../modules/house.md) / HouseType
 
 # Interface: HouseType
 
@@ -10,61 +10,61 @@ House interface.
 
 * **HouseType**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [id](house.housetype.md#id)
-* [latitude](house.housetype.md#optional-latitude)
-* [longitude](house.housetype.md#optional-longitude)
-* [name](house.housetype.md#optional-name)
-* [rooms](house.housetype.md#optional-rooms)
-* [state](house.housetype.md#optional-state)
+* [latitude](house.housetype.md#latitude)
+* [longitude](house.housetype.md#longitude)
+* [name](house.housetype.md#name)
+* [rooms](house.housetype.md#rooms)
+* [state](house.housetype.md#state)
 
 ## Properties
 
-###  id
+### id
 
-• **id**: *string*
+• `Optional` **id**: undefined \| string
 
-Defined in house/house.interface.ts:8
-
-___
-
-### `Optional` latitude
-
-• **latitude**? : *undefined | string*
-
-Defined in house/house.interface.ts:10
+*Defined in [src/core/house/house.interface.ts:8](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/house/house.interface.ts#L8)*
 
 ___
 
-### `Optional` longitude
+### latitude
 
-• **longitude**? : *undefined | string*
+• `Optional` **latitude**: undefined \| string
 
-Defined in house/house.interface.ts:11
-
-___
-
-### `Optional` name
-
-• **name**? : *undefined | string*
-
-Defined in house/house.interface.ts:9
+*Defined in [src/core/house/house.interface.ts:10](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/house/house.interface.ts#L10)*
 
 ___
 
-### `Optional` rooms
+### longitude
 
-• **rooms**? : *`Array<RoomType[]>`*
+• `Optional` **longitude**: undefined \| string
 
-Defined in house/house.interface.ts:12
+*Defined in [src/core/house/house.interface.ts:11](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/house/house.interface.ts#L11)*
 
 ___
 
-### `Optional` state
+### name
 
-• **state**? : *[StateType](state.statetype.md)*
+• `Optional` **name**: undefined \| string
 
-Defined in house/house.interface.ts:13
+*Defined in [src/core/house/house.interface.ts:9](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/house/house.interface.ts#L9)*
+
+___
+
+### rooms
+
+• `Optional` **rooms**: Array\<[RoomType](room.roomtype.md)[]>
+
+*Defined in [src/core/house/house.interface.ts:12](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/house/house.interface.ts#L12)*
+
+___
+
+### state
+
+• `Optional` **state**: [StateType](state.statetype.md)
+
+*Defined in [src/core/house/house.interface.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/house/house.interface.ts#L13)*

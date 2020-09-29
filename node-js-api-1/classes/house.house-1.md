@@ -1,6 +1,6 @@
-> **[friday-server](../README.md)**
+**friday-server**
 
-[Globals](../globals.md) / [house](../modules/house.md) / [House](house.house-1.md) /
+> [README](../README.md) / [Globals](../globals.md) / [house](../modules/house.md) / House
 
 # Class: House
 
@@ -10,52 +10,52 @@ House
 
 * **House**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [create](house.house-1.md#create)
-* [destoy](house.house-1.md#destoy)
+* [destroy](house.house-1.md#destroy)
 * [getAll](house.house-1.md#getall)
 * [getById](house.house-1.md#getbyid)
 * [update](house.house-1.md#update)
 
 ## Properties
 
-###  create
+### create
 
-• **create**: *[create](../modules/house.md#create)* =  create
+•  **create**: [create](../modules/house.md#create) = create
 
-Defined in house/index.ts:11
-
-___
-
-###  destoy
-
-• **destoy**: *[destroy](../modules/house.md#destroy)* =  destroy
-
-Defined in house/index.ts:13
+*Defined in [src/core/house/index.ts:11](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/house/index.ts#L11)*
 
 ___
 
-###  getAll
+### destroy
 
-• **getAll**: *[getAll](../modules/house.md#getall)* =  getAll
+•  **destroy**: [destroy](../modules/house.md#destroy) = destroy
 
-Defined in house/index.ts:14
-
-___
-
-###  getById
-
-• **getById**: *[getById](../modules/house.md#getbyid)* =  getById
-
-Defined in house/index.ts:15
+*Defined in [src/core/house/index.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/house/index.ts#L13)*
 
 ___
 
-###  update
+### getAll
 
-• **update**: *[update](../modules/house.md#update)* =  update
+•  **getAll**: [getAll](../modules/house.md#getall) = getAll
 
-Defined in house/index.ts:12
+*Defined in [src/core/house/index.ts:14](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/house/index.ts#L14)*
+
+___
+
+### getById
+
+•  **getById**: [getById](../modules/house.md#getbyid) = getById
+
+*Defined in [src/core/house/index.ts:15](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/house/index.ts#L15)*
+
+___
+
+### update
+
+•  **update**: [update](../modules/house.md#update) = update
+
+*Defined in [src/core/house/index.ts:12](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/house/index.ts#L12)*

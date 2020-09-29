@@ -1,6 +1,6 @@
-> **[friday-server](../README.md)**
+**friday-server**
 
-[Globals](../globals.md) / [device](../modules/device.md) / [Device](device.device-1.md) /
+> [README](../README.md) / [Globals](../globals.md) / [device](../modules/device.md) / Device
 
 # Class: Device
 
@@ -10,52 +10,52 @@ Device
 
 * **Device**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [create](device.device-1.md#create)
-* [destoy](device.device-1.md#destoy)
+* [destroy](device.device-1.md#destroy)
 * [getAll](device.device-1.md#getall)
 * [getById](device.device-1.md#getbyid)
 * [update](device.device-1.md#update)
 
 ## Properties
 
-###  create
+### create
 
-• **create**: *[create](../modules/device.md#create)* =  create
+•  **create**: [create](../modules/device.md#create) = create
 
-Defined in device/index.ts:11
-
-___
-
-###  destoy
-
-• **destoy**: *[destroy](../modules/device.md#destroy)* =  destroy
-
-Defined in device/index.ts:13
+*Defined in [src/core/device/index.ts:11](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/device/index.ts#L11)*
 
 ___
 
-###  getAll
+### destroy
 
-• **getAll**: *[getAll](../modules/device.md#getall)* =  getAll
+•  **destroy**: [destroy](../modules/device.md#destroy) = destroy
 
-Defined in device/index.ts:14
-
-___
-
-###  getById
-
-• **getById**: *[getById](../modules/device.md#getbyid)* =  getById
-
-Defined in device/index.ts:15
+*Defined in [src/core/device/index.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/device/index.ts#L13)*
 
 ___
 
-###  update
+### getAll
 
-• **update**: *[update](../modules/device.md#update)* =  update
+•  **getAll**: [getAll](../modules/device.md#getall) = getAll
 
-Defined in device/index.ts:12
+*Defined in [src/core/device/index.ts:14](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/device/index.ts#L14)*
+
+___
+
+### getById
+
+•  **getById**: [getById](../modules/device.md#getbyid) = getById
+
+*Defined in [src/core/device/index.ts:15](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/device/index.ts#L15)*
+
+___
+
+### update
+
+•  **update**: [update](../modules/device.md#update) = update
+
+*Defined in [src/core/device/index.ts:12](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/device/index.ts#L12)*

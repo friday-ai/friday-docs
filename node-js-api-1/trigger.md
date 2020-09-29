@@ -1,22 +1,20 @@
-# trigger
+**friday-server**
 
-> [**friday-server**](./)
+> [README](../README.md) / [Globals](../globals.md) / trigger
 
-[Globals](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/globals.md) / [trigger](trigger.md) /
+# Module: trigger
 
-## External module: trigger
+## Index
 
-#### Index
+### Classes
 
-**Classes**
+* [Trigger](../classes/trigger.trigger-1.md)
 
-* [Trigger](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/classes/trigger.trigger-1.md)
+### Interfaces
 
-**Interfaces**
+* [TriggerType](../interfaces/trigger.triggertype.md)
 
-* [TriggerType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/trigger.triggertype.md)
-
-**Functions**
+### Functions
 
 * [create](trigger.md#create)
 * [destroy](trigger.md#destroy)
@@ -24,19 +22,18 @@
 * [getById](trigger.md#getbyid)
 * [update](trigger.md#update)
 
-### Functions
+## Functions
 
-#### create
+### create
 
-▸ **create**\(`trigger`: [TriggerType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/trigger.triggertype.md)\): _`Promise<TriggerType>`_
+▸ **create**(`trigger`: [TriggerType](../interfaces/trigger.triggertype.md)): Promise\<[TriggerType](../interfaces/trigger.triggertype.md)>
 
-Defined in trigger/trigger.create.ts:24
+*Defined in [src/core/trigger/trigger.create.ts:23](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/trigger/trigger.create.ts#L23)*
 
 Create a trigger.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.trigger.create({
    id: '41a0c318-efe0-46c9-885b-545481a32f3d',
    name: 'Sample trigger',
@@ -47,117 +44,123 @@ friday.trigger.create({
      value: '23'
    })
 });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `trigger` | [TriggerType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/trigger.triggertype.md) | A trigger object. |
+Name | Type | Description |
+------ | ------ | ------ |
+`trigger` | [TriggerType](../interfaces/trigger.triggertype.md) | A trigger object. |
 
-**Returns:** _`Promise<TriggerType>`_
+**Returns:** Promise\<[TriggerType](../interfaces/trigger.triggertype.md)>
 
 Resolve with created trigger.
 
-#### destroy
+___
 
-▸ **destroy**\(`id`: string\): _`Promise<void>`_
+### destroy
 
-Defined in trigger/trigger.destroy.ts:14
+▸ **destroy**(`id`: string): Promise\<void>
+
+*Defined in [src/core/trigger/trigger.destroy.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/trigger/trigger.destroy.ts#L13)*
 
 Destroy a trigger.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.trigger.destroy('db35b9d3-3e6c-4b49-8988-b352494435bc');
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `id` | string | Id of trigger. |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of trigger. |
 
-**Returns:** _`Promise<void>`_
+**Returns:** Promise\<void>
 
-#### getAll
+___
 
-▸ **getAll**\(`options?`: `GetOptions`\): _`Promise<TriggerType[]>`_
+### getAll
 
-Defined in trigger/trigger.getAll.ts:26
+▸ **getAll**(`options?`: GetOptions): Promise\<[TriggerType](../interfaces/trigger.triggertype.md)[]>
+
+*Defined in [src/core/trigger/trigger.getAll.ts:25](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/trigger/trigger.getAll.ts#L25)*
 
 Get all triggers.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.trigger.getAll({
    scope: '',
    take: 20,
    skip: 0
  });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `options?` | `GetOptions` | Options of the query. |
+Name | Type | Description |
+------ | ------ | ------ |
+`options?` | GetOptions | Options of the query. |
 
-**Returns:** _`Promise<TriggerType[]>`_
+**Returns:** Promise\<[TriggerType](../interfaces/trigger.triggertype.md)[]>
 
 Resolve with trigger array.
 
-#### getById
+___
 
-▸ **getById**\(`id`: string, `scope?`: undefined \| string\): _`Promise<TriggerType>`_
+### getById
 
-Defined in trigger/trigger.getById.ts:16
+▸ **getById**(`id`: string, `scope?`: undefined \| string): Promise\<[TriggerType](../interfaces/trigger.triggertype.md)>
+
+*Defined in [src/core/trigger/trigger.getById.ts:15](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/trigger/trigger.getById.ts#L15)*
 
 Get a trigger by id.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.trigger.getById('7f4bc504-16bd-4a78-aab1-48243237ab5c', 'full');
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `id` | string | Id of trigger. |
-| `scope?` | undefined \| string | Scope option. \(Optional\) |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of trigger. |
+`scope?` | undefined \| string | Scope option. (Optional) |
 
-**Returns:** _`Promise<TriggerType>`_
+**Returns:** Promise\<[TriggerType](../interfaces/trigger.triggertype.md)>
 
 Resolve with trigger.
 
-#### update
+___
 
-▸ **update**\(`trigger`: [TriggerType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/trigger.triggertype.md)\): _`Promise<TriggerType>`_
+### update
 
-Defined in trigger/trigger.update.ts:18
+▸ **update**(`id`: string, `trigger`: [TriggerType](../interfaces/trigger.triggertype.md)): Promise\<[TriggerType](../interfaces/trigger.triggertype.md)>
+
+*Defined in [src/core/trigger/trigger.update.ts:20](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/trigger/trigger.update.ts#L20)*
 
 Update a trigger.
 
-**`example`**
-
-```text
-friday.trigger.update({
+**`example`** 
+````
+friday.trigger.update(
+'fc5700be-8ed2-4540-a59e-a8572d8c41c5',
+{
   id: 'fc5700be-8ed2-4540-a59e-a8572d8c41c5'
   name: 'trigger update'
 });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `trigger` | [TriggerType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/trigger.triggertype.md) | A trigger object. |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of trigger |
+`trigger` | [TriggerType](../interfaces/trigger.triggertype.md) | A trigger object. |
 
-**Returns:** _`Promise<TriggerType>`_
+**Returns:** Promise\<[TriggerType](../interfaces/trigger.triggertype.md)>
 
 Resolve with updated trigger.
-

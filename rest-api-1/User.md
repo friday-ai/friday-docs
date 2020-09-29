@@ -5,9 +5,9 @@
 - [destroy](#destroy)
 - [getAll](#getAll)
 - [getById](#getById)
+- [getUsersCount](#getUsersCount)
 
 ___
-
 
 
 {% api-method method="post" host=" " path="/api/v1/user" %}{% api-method-summary %}create{% endapi-method-summary %}
@@ -22,7 +22,7 @@ ___
 {% api-method-path-parameters %}
 {% endapi-method-path-parameters %}
 
-{% api-method-headers %}
+{% api-method-headers %} 
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
@@ -71,7 +71,7 @@ Success-Response
   name: 'Pepperwood',
   firstName: 'John',
   email: 'john@pepperwood.com',
-  birthDate: new Date(1996, 12, 20)
+  birthDate: 20/12/1996
 }
 ```
 {% endapi-method-response-example %}
@@ -79,7 +79,6 @@ Success-Response
 
 {% endapi-method-spec %}
 {% endapi-method %}
-
 
 {% api-method method="delete" host=" " path="/api/v1/user/:id" %}{% api-method-summary %}destroy{% endapi-method-summary %}
 
@@ -93,7 +92,7 @@ Success-Response
 {% api-method-path-parameters %}
 {% endapi-method-path-parameters %}
 
-{% api-method-headers %}
+{% api-method-headers %} 
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
@@ -119,8 +118,7 @@ Success-Response
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-{% api-method method="get" host=" " path="/api/v1/satellite" %}{% api-method-summary %}getAll{% endapi-method-summary %}
+{% api-method method="get" host=" " path="/api/v1/user" %}{% api-method-summary %}getAll{% endapi-method-summary %}
 
 {% api-method-description %}
 <p>This route allows you to get all users</p>
@@ -132,7 +130,7 @@ Success-Response
 {% api-method-path-parameters %}
 {% endapi-method-path-parameters %}
 
-{% api-method-headers %}
+{% api-method-headers %} 
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
@@ -153,7 +151,7 @@ Success-Response
   name: 'Pepperwood',
   firstName: 'John',
   email: 'john@pepperwood.com',
-  birthDate: new Date(1996, 12, 20)
+  birthDate: 20/12/1996
 }]
 ```
 {% endapi-method-response-example %}
@@ -161,7 +159,6 @@ Success-Response
 
 {% endapi-method-spec %}
 {% endapi-method %}
-
 
 {% api-method method="get" host=" " path="/api/v1/user/:id" %}{% api-method-summary %}getById{% endapi-method-summary %}
 
@@ -175,7 +172,7 @@ Success-Response
 {% api-method-path-parameters %}
 {% endapi-method-path-parameters %}
 
-{% api-method-headers %}
+{% api-method-headers %} 
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
@@ -196,11 +193,34 @@ Success-Response
   name: 'Pepperwood',
   firstName: 'John',
   email: 'john@pepperwood.com',
-  birthDate: new Date(1996, 12, 20)
+  birthDate: 20/12/1996
 }
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
+
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="post" host=" " path="/api/v1/user/count" %}{% api-method-summary %}getUsersCount{% endapi-method-summary %}
+
+{% api-method-description %}
+<p>This route allows you to know the number of registered users</p>
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+
+{% api-method-path-parameters %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %} 
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% endapi-method-query-parameters %}
+
+{% endapi-method-request %}
 
 {% endapi-method-spec %}
 {% endapi-method %}

@@ -1,6 +1,6 @@
-> **[friday-server](../README.md)**
+**friday-server**
 
-[Globals](../globals.md) / [script](../modules/script.md) / [ScriptType](script.scripttype.md) /
+> [README](../README.md) / [Globals](../globals.md) / [script](../modules/script.md) / ScriptType
 
 # Interface: ScriptType
 
@@ -10,34 +10,34 @@ Script interface.
 
 * **ScriptType**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
-* [code](script.scripttype.md#optional-code)
+* [code](script.scripttype.md#code)
 * [id](script.scripttype.md#id)
-* [name](script.scripttype.md#optional-name)
+* [name](script.scripttype.md#name)
 
 ## Properties
 
-### `Optional` code
+### code
 
-• **code**? : *`Object`*
+• `Optional` **code**: undefined \| string
 
-Defined in script/script.interface.ts:8
-
-___
-
-###  id
-
-• **id**: *string*
-
-Defined in script/script.interface.ts:6
+*Defined in [src/core/script/script.interface.ts:7](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/script/script.interface.ts#L7)*
 
 ___
 
-### `Optional` name
+### id
 
-• **name**? : *undefined | string*
+• `Optional` **id**: undefined \| string
 
-Defined in script/script.interface.ts:7
+*Defined in [src/core/script/script.interface.ts:5](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/script/script.interface.ts#L5)*
+
+___
+
+### name
+
+• `Optional` **name**: undefined \| string
+
+*Defined in [src/core/script/script.interface.ts:6](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/script/script.interface.ts#L6)*

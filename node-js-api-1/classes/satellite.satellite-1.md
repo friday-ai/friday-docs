@@ -1,6 +1,6 @@
-> **[friday-server](../README.md)**
+**friday-server**
 
-[Globals](../globals.md) / [satellite](../modules/satellite.md) / [Satellite](satellite.satellite-1.md) /
+> [README](../README.md) / [Globals](../globals.md) / [satellite](../modules/satellite.md) / Satellite
 
 # Class: Satellite
 
@@ -10,52 +10,52 @@ Satellite
 
 * **Satellite**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [create](satellite.satellite-1.md#create)
-* [destoy](satellite.satellite-1.md#destoy)
+* [destroy](satellite.satellite-1.md#destroy)
 * [getAll](satellite.satellite-1.md#getall)
 * [getById](satellite.satellite-1.md#getbyid)
 * [update](satellite.satellite-1.md#update)
 
 ## Properties
 
-###  create
+### create
 
-• **create**: *[create](../modules/satellite.md#create)* =  create
+•  **create**: [create](../modules/satellite.md#create) = create
 
-Defined in satellite/index.ts:11
-
-___
-
-###  destoy
-
-• **destoy**: *[destroy](../modules/satellite.md#destroy)* =  destroy
-
-Defined in satellite/index.ts:13
+*Defined in [src/core/satellite/index.ts:11](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/satellite/index.ts#L11)*
 
 ___
 
-###  getAll
+### destroy
 
-• **getAll**: *[getAll](../modules/satellite.md#getall)* =  getAll
+•  **destroy**: [destroy](../modules/satellite.md#destroy) = destroy
 
-Defined in satellite/index.ts:14
-
-___
-
-###  getById
-
-• **getById**: *[getById](../modules/satellite.md#getbyid)* =  getById
-
-Defined in satellite/index.ts:15
+*Defined in [src/core/satellite/index.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/satellite/index.ts#L13)*
 
 ___
 
-###  update
+### getAll
 
-• **update**: *[update](../modules/satellite.md#update)* =  update
+•  **getAll**: [getAll](../modules/satellite.md#getall) = getAll
 
-Defined in satellite/index.ts:12
+*Defined in [src/core/satellite/index.ts:14](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/satellite/index.ts#L14)*
+
+___
+
+### getById
+
+•  **getById**: [getById](../modules/satellite.md#getbyid) = getById
+
+*Defined in [src/core/satellite/index.ts:15](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/satellite/index.ts#L15)*
+
+___
+
+### update
+
+•  **update**: [update](../modules/satellite.md#update) = update
+
+*Defined in [src/core/satellite/index.ts:12](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/satellite/index.ts#L12)*

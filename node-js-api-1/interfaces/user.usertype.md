@@ -1,6 +1,6 @@
-> **[friday-server](../README.md)**
+**friday-server**
 
-[Globals](../globals.md) / [user](../modules/user.md) / [UserType](user.usertype.md) /
+> [README](../README.md) / [Globals](../globals.md) / [user](../modules/user.md) / UserType
 
 # Interface: UserType
 
@@ -10,97 +10,97 @@ User interface.
 
 * **UserType**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
-* [birthDate](user.usertype.md#optional-birthdate)
-* [email](user.usertype.md#optional-email)
-* [firstName](user.usertype.md#optional-firstname)
+* [birthDate](user.usertype.md#birthdate)
+* [email](user.usertype.md#email)
+* [firstName](user.usertype.md#firstname)
 * [id](user.usertype.md#id)
-* [language](user.usertype.md#optional-language)
-* [name](user.usertype.md#optional-name)
-* [password](user.usertype.md#optional-password)
-* [role](user.usertype.md#optional-role)
-* [state](user.usertype.md#optional-state)
-* [variables](user.usertype.md#optional-variables)
+* [language](user.usertype.md#language)
+* [name](user.usertype.md#name)
+* [password](user.usertype.md#password)
+* [role](user.usertype.md#role)
+* [state](user.usertype.md#state)
+* [variables](user.usertype.md#variables)
 
 ## Properties
 
-### `Optional` birthDate
+### birthDate
 
-• **birthDate**? : *`Date`*
+• `Optional` **birthDate**: Date \| string
 
-Defined in user/user.interface.ts:14
-
-___
-
-### `Optional` email
-
-• **email**? : *undefined | string*
-
-Defined in user/user.interface.ts:12
+*Defined in [src/core/user/user.interface.ts:14](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/user/user.interface.ts#L14)*
 
 ___
 
-### `Optional` firstName
+### email
 
-• **firstName**? : *undefined | string*
+• `Optional` **email**: undefined \| string
 
-Defined in user/user.interface.ts:11
-
-___
-
-###  id
-
-• **id**: *string*
-
-Defined in user/user.interface.ts:9
+*Defined in [src/core/user/user.interface.ts:12](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/user/user.interface.ts#L12)*
 
 ___
 
-### `Optional` language
+### firstName
 
-• **language**? : *`AvailableLanguages`*
+• `Optional` **firstName**: undefined \| string
 
-Defined in user/user.interface.ts:16
-
-___
-
-### `Optional` name
-
-• **name**? : *undefined | string*
-
-Defined in user/user.interface.ts:10
+*Defined in [src/core/user/user.interface.ts:11](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/user/user.interface.ts#L11)*
 
 ___
 
-### `Optional` password
+### id
 
-• **password**? : *undefined | string*
+• `Optional` **id**: undefined \| string
 
-Defined in user/user.interface.ts:13
-
-___
-
-### `Optional` role
-
-• **role**? : *`UserRole`*
-
-Defined in user/user.interface.ts:15
+*Defined in [src/core/user/user.interface.ts:9](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/user/user.interface.ts#L9)*
 
 ___
 
-### `Optional` state
+### language
 
-• **state**? : *[StateType](state.statetype.md)*
+• `Optional` **language**: AvailableLanguages
 
-Defined in user/user.interface.ts:17
+*Defined in [src/core/user/user.interface.ts:16](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/user/user.interface.ts#L16)*
 
 ___
 
-### `Optional` variables
+### name
 
-• **variables**? : *`Array<VariableType[]>`*
+• `Optional` **name**: undefined \| string
 
-Defined in user/user.interface.ts:18
+*Defined in [src/core/user/user.interface.ts:10](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/user/user.interface.ts#L10)*
+
+___
+
+### password
+
+• `Optional` **password**: undefined \| string
+
+*Defined in [src/core/user/user.interface.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/user/user.interface.ts#L13)*
+
+___
+
+### role
+
+• `Optional` **role**: UserRole
+
+*Defined in [src/core/user/user.interface.ts:15](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/user/user.interface.ts#L15)*
+
+___
+
+### state
+
+• `Optional` **state**: [StateType](state.statetype.md)
+
+*Defined in [src/core/user/user.interface.ts:17](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/user/user.interface.ts#L17)*
+
+___
+
+### variables
+
+• `Optional` **variables**: Array\<[VariableType](variable.variabletype.md)[]>
+
+*Defined in [src/core/user/user.interface.ts:18](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/user/user.interface.ts#L18)*

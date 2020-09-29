@@ -1,22 +1,20 @@
-# device
+**friday-server**
 
-> [**friday-server**](./)
+> [README](../README.md) / [Globals](../globals.md) / device
 
-[Globals](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/globals.md) / [device](device.md) /
+# Module: device
 
-## External module: device
+## Index
 
-#### Index
+### Classes
 
-**Classes**
+* [Device](../classes/device.device-1.md)
 
-* [Device](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/classes/device.device-1.md)
+### Interfaces
 
-**Interfaces**
+* [DeviceType](../interfaces/device.devicetype.md)
 
-* [DeviceType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/device.devicetype.md)
-
-**Functions**
+### Functions
 
 * [create](device.md#create)
 * [destroy](device.md#destroy)
@@ -24,19 +22,18 @@
 * [getById](device.md#getbyid)
 * [update](device.md#update)
 
-### Functions
+## Functions
 
-#### create
+### create
 
-▸ **create**\(`device`: [DeviceType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/device.devicetype.md)\): _`Promise<DeviceType>`_
+▸ **create**(`device`: [DeviceType](../interfaces/device.devicetype.md)): Promise\<[DeviceType](../interfaces/device.devicetype.md)>
 
-Defined in device/device.create.ts:25
+*Defined in [src/core/device/device.create.ts:26](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/device/device.create.ts#L26)*
 
 Create a device.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.device.create({
    id: '8ae2dc77-a733-45b9-bbe6-69d837222dce',
    name: 'Light sample',
@@ -48,117 +45,123 @@ friday.device.create({
    roomId: '84901b92-06fe-4f0f-93bd-d4ead2105720',
    pluginId: ''
 });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `device` | [DeviceType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/device.devicetype.md) | A device object. |
+Name | Type | Description |
+------ | ------ | ------ |
+`device` | [DeviceType](../interfaces/device.devicetype.md) | A device object. |
 
-**Returns:** _`Promise<DeviceType>`_
+**Returns:** Promise\<[DeviceType](../interfaces/device.devicetype.md)>
 
 Resolve with created device.
 
-#### destroy
+___
 
-▸ **destroy**\(`id`: string\): _`Promise<void>`_
+### destroy
 
-Defined in device/device.destroy.ts:14
+▸ **destroy**(`id`: string): Promise\<void>
+
+*Defined in [src/core/device/device.destroy.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/device/device.destroy.ts#L13)*
 
 Destroy a device.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.device.destroy('ffba6936-2ce0-411c-91c9-6f1dd6ed0b17');
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `id` | string | Id of device. |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of device. |
 
-**Returns:** _`Promise<void>`_
+**Returns:** Promise\<void>
 
-#### getAll
+___
 
-▸ **getAll**\(`options?`: `GetOptions`\): _`Promise<DeviceType[]>`_
+### getAll
 
-Defined in device/device.getAll.ts:26
+▸ **getAll**(`options?`: GetOptions): Promise\<[DeviceType](../interfaces/device.devicetype.md)[]>
+
+*Defined in [src/core/device/device.getAll.ts:25](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/device/device.getAll.ts#L25)*
 
 Get all devices.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.device.getAll({
    scope: '',
    take: 20,
    skip: 0
  });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `options?` | `GetOptions` | Options of the query. |
+Name | Type | Description |
+------ | ------ | ------ |
+`options?` | GetOptions | Options of the query. |
 
-**Returns:** _`Promise<DeviceType[]>`_
+**Returns:** Promise\<[DeviceType](../interfaces/device.devicetype.md)[]>
 
 Resolve with device array.
 
-#### getById
+___
 
-▸ **getById**\(`id`: string, `scope?`: undefined \| string\): _`Promise<DeviceType>`_
+### getById
 
-Defined in device/device.getById.ts:16
+▸ **getById**(`id`: string, `scope?`: undefined \| string): Promise\<[DeviceType](../interfaces/device.devicetype.md)>
+
+*Defined in [src/core/device/device.getById.ts:15](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/device/device.getById.ts#L15)*
 
 Get a device by id.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.device.getById('40085fb8-1784-49be-84ad-8adbca1ebc3d', 'full');
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `id` | string | Id of device. |
-| `scope?` | undefined \| string | Scope option. \(Optional\) |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of device. |
+`scope?` | undefined \| string | Scope option. (Optional) |
 
-**Returns:** _`Promise<DeviceType>`_
+**Returns:** Promise\<[DeviceType](../interfaces/device.devicetype.md)>
 
 Resolve with device.
 
-#### update
+___
 
-▸ **update**\(`device`: [DeviceType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/device.devicetype.md)\): _`Promise<DeviceType>`_
+### update
 
-Defined in device/device.update.ts:18
+▸ **update**(`id`: string, `device`: [DeviceType](../interfaces/device.devicetype.md)): Promise\<[DeviceType](../interfaces/device.devicetype.md)>
+
+*Defined in [src/core/device/device.update.ts:20](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/device/device.update.ts#L20)*
 
 Update a device.
 
-**`example`**
-
-```text
-friday.device.update({
+**`example`** 
+````
+friday.device.update(
+'22b5b9ce-cd9e-404a-8c31-97350d684fd3',
+{
   id: '36440e00-bef2-4cdb-883e-1bada5bc501b'
   name: 'device update'
 });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `device` | [DeviceType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/device.devicetype.md) | A device object. |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of device. |
+`device` | [DeviceType](../interfaces/device.devicetype.md) | A device object. |
 
-**Returns:** _`Promise<DeviceType>`_
+**Returns:** Promise\<[DeviceType](../interfaces/device.devicetype.md)>
 
 Resolve with updated device.
-

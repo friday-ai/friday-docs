@@ -1,6 +1,6 @@
-> **[friday-server](../README.md)**
+**friday-server**
 
-[Globals](../globals.md) / [state](../modules/state.md) / [StateType](state.statetype.md) /
+> [README](../README.md) / [Globals](../globals.md) / [state](../modules/state.md) / StateType
 
 # Interface: StateType
 
@@ -10,97 +10,106 @@ State interface.
 
 * **StateType**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
-* [device](state.statetype.md#optional-device)
-* [house](state.statetype.md#optional-house)
+* [device](state.statetype.md#device)
+* [house](state.statetype.md#house)
 * [id](state.statetype.md#id)
+* [last](state.statetype.md#last)
 * [owner](state.statetype.md#owner)
 * [ownerType](state.statetype.md#ownertype)
-* [plugin](state.statetype.md#optional-plugin)
-* [room](state.statetype.md#optional-room)
-* [satellite](state.statetype.md#optional-satellite)
-* [user](state.statetype.md#optional-user)
+* [plugin](state.statetype.md#plugin)
+* [room](state.statetype.md#room)
+* [satellite](state.statetype.md#satellite)
+* [user](state.statetype.md#user)
 * [value](state.statetype.md#value)
 
 ## Properties
 
-### `Optional` device
+### device
 
-• **device**? : *[DeviceType](device.devicetype.md)*
+• `Optional` **device**: [DeviceType](device.devicetype.md)
 
-Defined in state/state.interface.ts:22
-
-___
-
-### `Optional` house
-
-• **house**? : *[HouseType](house.housetype.md)*
-
-Defined in state/state.interface.ts:19
+*Defined in [src/core/state/state.interface.ts:23](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/state/state.interface.ts#L23)*
 
 ___
 
-###  id
+### house
 
-• **id**: *string*
+• `Optional` **house**: [HouseType](house.housetype.md)
 
-Defined in state/state.interface.ts:13
-
-___
-
-###  owner
-
-• **owner**: *string*
-
-Defined in state/state.interface.ts:14
+*Defined in [src/core/state/state.interface.ts:20](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/state/state.interface.ts#L20)*
 
 ___
 
-###  ownerType
+### id
 
-• **ownerType**: *`StateOwner`*
+• `Optional` **id**: undefined \| string
 
-Defined in state/state.interface.ts:15
-
-___
-
-### `Optional` plugin
-
-• **plugin**? : *[PluginType](plugin.plugintype.md)*
-
-Defined in state/state.interface.ts:20
+*Defined in [src/core/state/state.interface.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/state/state.interface.ts#L13)*
 
 ___
 
-### `Optional` room
+### last
 
-• **room**? : *[RoomType](room.roomtype.md)*
+• `Optional` **last**: undefined \| false \| true
 
-Defined in state/state.interface.ts:18
-
-___
-
-### `Optional` satellite
-
-• **satellite**? : *[SatelliteType](satellite.satellitetype.md)*
-
-Defined in state/state.interface.ts:21
+*Defined in [src/core/state/state.interface.ts:17](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/state/state.interface.ts#L17)*
 
 ___
 
-### `Optional` user
+### owner
 
-• **user**? : *[UserType](user.usertype.md)*
+•  **owner**: string
 
-Defined in state/state.interface.ts:17
+*Defined in [src/core/state/state.interface.ts:14](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/state/state.interface.ts#L14)*
 
 ___
 
-###  value
+### ownerType
 
-• **value**: *`AvailableState`*
+•  **ownerType**: StateOwner
 
-Defined in state/state.interface.ts:16
+*Defined in [src/core/state/state.interface.ts:15](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/state/state.interface.ts#L15)*
+
+___
+
+### plugin
+
+• `Optional` **plugin**: [PluginType](plugin.plugintype.md)
+
+*Defined in [src/core/state/state.interface.ts:21](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/state/state.interface.ts#L21)*
+
+___
+
+### room
+
+• `Optional` **room**: [RoomType](room.roomtype.md)
+
+*Defined in [src/core/state/state.interface.ts:19](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/state/state.interface.ts#L19)*
+
+___
+
+### satellite
+
+• `Optional` **satellite**: [SatelliteType](satellite.satellitetype.md)
+
+*Defined in [src/core/state/state.interface.ts:22](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/state/state.interface.ts#L22)*
+
+___
+
+### user
+
+• `Optional` **user**: [UserType](user.usertype.md)
+
+*Defined in [src/core/state/state.interface.ts:18](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/state/state.interface.ts#L18)*
+
+___
+
+### value
+
+•  **value**: AvailableState
+
+*Defined in [src/core/state/state.interface.ts:16](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/state/state.interface.ts#L16)*

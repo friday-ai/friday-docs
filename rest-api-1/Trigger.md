@@ -9,7 +9,6 @@
 ___
 
 
-
 {% api-method method="post" host=" " path="/api/v1/trigger" %}{% api-method-summary %}create{% endapi-method-summary %}
 
 {% api-method-description %}
@@ -22,7 +21,7 @@ ___
 {% api-method-path-parameters %}
 {% endapi-method-path-parameters %}
 
-{% api-method-headers %}
+{% api-method-headers %} 
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
@@ -71,7 +70,6 @@ Success-Response
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
 {% api-method method="delete" host=" " path="/api/v1/trigger/:id" %}{% api-method-summary %}destroy{% endapi-method-summary %}
 
 {% api-method-description %}
@@ -84,7 +82,7 @@ Success-Response
 {% api-method-path-parameters %}
 {% endapi-method-path-parameters %}
 
-{% api-method-headers %}
+{% api-method-headers %} 
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
@@ -110,7 +108,6 @@ Success-Response
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
 {% api-method method="get" host=" " path="/api/v1/trigger" %}{% api-method-summary %}getAll{% endapi-method-summary %}
 
 {% api-method-description %}
@@ -123,7 +120,7 @@ Success-Response
 {% api-method-path-parameters %}
 {% endapi-method-path-parameters %}
 
-{% api-method-headers %}
+{% api-method-headers %} 
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
@@ -156,7 +153,6 @@ Success-Response
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
 {% api-method method="get" host=" " path="/api/v1/trigger/:id" %}{% api-method-summary %}getById{% endapi-method-summary %}
 
 {% api-method-description %}
@@ -169,7 +165,7 @@ Success-Response
 {% api-method-path-parameters %}
 {% endapi-method-path-parameters %}
 
-{% api-method-headers %}
+{% api-method-headers %} 
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}

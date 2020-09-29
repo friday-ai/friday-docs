@@ -1,41 +1,38 @@
-# variable
+**friday-server**
 
-> [**friday-server**](./)
+> [README](../README.md) / [Globals](../globals.md) / variable
 
-[Globals](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/globals.md) / [variable](variable.md) /
+# Module: variable
 
-## External module: variable
+## Index
 
-#### Index
+### Classes
 
-**Classes**
+* [Variable](../classes/variable.variable-1.md)
 
-* [Variable](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/classes/variable.variable-1.md)
+### Interfaces
 
-**Interfaces**
+* [VariableType](../interfaces/variable.variabletype.md)
 
-* [VariableType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/variable.variabletype.md)
-
-**Functions**
+### Functions
 
 * [create](variable.md#create)
 * [destroy](variable.md#destroy)
 * [getValue](variable.md#getvalue)
 * [update](variable.md#update)
 
-### Functions
+## Functions
 
-#### create
+### create
 
-▸ **create**\(`variable`: [VariableType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/variable.variabletype.md)\): _`Promise<VariableType>`_
+▸ **create**(`variable`: [VariableType](../interfaces/variable.variabletype.md)): Promise\<[VariableType](../interfaces/variable.variabletype.md)>
 
-Defined in variable/variable.create.ts:21
+*Defined in [src/core/variable/variable.create.ts:20](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/variable/variable.create.ts#L20)*
 
 Create a variable.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.variable.create({
    id: '532aea33-3bff-479e-af74-ef678f012a51',
    key: 'key sample',
@@ -43,88 +40,93 @@ friday.variable.create({
    owner: 'a2020069-9e06-48d9-9fa1-0b5628e612c4',
    ownerType: VariableOwner.USER
 });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `variable` | [VariableType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/variable.variabletype.md) | A variable object. |
+Name | Type | Description |
+------ | ------ | ------ |
+`variable` | [VariableType](../interfaces/variable.variabletype.md) | A variable object. |
 
-**Returns:** _`Promise<VariableType>`_
+**Returns:** Promise\<[VariableType](../interfaces/variable.variabletype.md)>
 
 Resolve with created variable.
 
-#### destroy
+___
 
-▸ **destroy**\(`variable`: [VariableType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/variable.variabletype.md)\): _`Promise<void>`_
+### destroy
 
-Defined in variable/variable.destroy.ts:15
+▸ **destroy**(`id`: string): Promise\<void>
+
+*Defined in [src/core/variable/variable.destroy.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/variable/variable.destroy.ts#L13)*
 
 Destroy a variable.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.variable.destroy('1d99601a-cbe8-4eb0-a059-f70f53299050');
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type |
-| :--- | :--- |
-| `variable` | [VariableType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/variable.variabletype.md) |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of variable. |
 
-**Returns:** _`Promise<void>`_
+**Returns:** Promise\<void>
 
-#### getValue
+___
 
-▸ **getValue**\(`key`: string\): _`Promise<VariableType>`_
+### getValue
 
-Defined in variable/variable.getValue.ts:15
+▸ **getValue**(`key`: string): Promise\<[VariableType](../interfaces/variable.variabletype.md)>
+
+*Defined in [src/core/variable/variable.getValue.ts:14](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/variable/variable.getValue.ts#L14)*
 
 Get a variable value by key.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.variable.getValue('key');
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `key` | string | Key of variable. |
+Name | Type | Description |
+------ | ------ | ------ |
+`key` | string | Key of variable. |
 
-**Returns:** _`Promise<VariableType>`_
+**Returns:** Promise\<[VariableType](../interfaces/variable.variabletype.md)>
 
 Resolve with variable.
 
-#### update
+___
 
-▸ **update**\(`variable`: [VariableType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/variable.variabletype.md)\): _`Promise<VariableType>`_
+### update
 
-Defined in variable/variable.update.ts:18
+▸ **update**(`idOrKey`: string, `variable`: [VariableType](../interfaces/variable.variabletype.md)): Promise\<[VariableType](../interfaces/variable.variabletype.md)>
+
+*Defined in [src/core/variable/variable.update.ts:20](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/variable/variable.update.ts#L20)*
 
 Update a variable.
 
-**`example`**
-
-```text
-friday.variable.update({
+**`example`** 
+````
+friday.variable.update(
+'47728070-a1d2-4aaf-9930-47dc82fc1771',
+{
   id: '47728070-a1d2-4aaf-9930-47dc82fc1771'
   key: 'variable update'
 });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `variable` | [VariableType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/variable.variabletype.md) | A variable object. |
+Name | Type | Description |
+------ | ------ | ------ |
+`idOrKey` | string | Id or key of variable |
+`variable` | [VariableType](../interfaces/variable.variabletype.md) | A variable object. |
 
-**Returns:** _`Promise<VariableType>`_
+**Returns:** Promise\<[VariableType](../interfaces/variable.variabletype.md)>
 
 Resolve with updated variable.
-

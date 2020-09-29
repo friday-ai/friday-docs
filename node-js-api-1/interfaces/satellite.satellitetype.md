@@ -1,6 +1,6 @@
-> **[friday-server](../README.md)**
+**friday-server**
 
-[Globals](../globals.md) / [satellite](../modules/satellite.md) / [SatelliteType](satellite.satellitetype.md) /
+> [README](../README.md) / [Globals](../globals.md) / [satellite](../modules/satellite.md) / SatelliteType
 
 # Interface: SatelliteType
 
@@ -10,70 +10,70 @@ Satellite interface.
 
 * **SatelliteType**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [id](satellite.satellitetype.md#id)
-* [name](satellite.satellitetype.md#optional-name)
-* [plugins](satellite.satellitetype.md#optional-plugins)
-* [room](satellite.satellitetype.md#optional-room)
-* [roomId](satellite.satellitetype.md#optional-roomid)
-* [state](satellite.satellitetype.md#optional-state)
-* [variables](satellite.satellitetype.md#optional-variables)
+* [name](satellite.satellitetype.md#name)
+* [plugins](satellite.satellitetype.md#plugins)
+* [room](satellite.satellitetype.md#room)
+* [roomId](satellite.satellitetype.md#roomid)
+* [state](satellite.satellitetype.md#state)
+* [variables](satellite.satellitetype.md#variables)
 
 ## Properties
 
-###  id
+### id
 
-• **id**: *string*
+• `Optional` **id**: undefined \| string
 
-Defined in satellite/satellite.interface.ts:10
-
-___
-
-### `Optional` name
-
-• **name**? : *undefined | string*
-
-Defined in satellite/satellite.interface.ts:11
+*Defined in [src/core/satellite/satellite.interface.ts:10](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/satellite/satellite.interface.ts#L10)*
 
 ___
 
-### `Optional` plugins
+### name
 
-• **plugins**? : *`Array<PluginType[]>`*
+• `Optional` **name**: undefined \| string
 
-Defined in satellite/satellite.interface.ts:14
-
-___
-
-### `Optional` room
-
-• **room**? : *[RoomType](room.roomtype.md)*
-
-Defined in satellite/satellite.interface.ts:13
+*Defined in [src/core/satellite/satellite.interface.ts:11](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/satellite/satellite.interface.ts#L11)*
 
 ___
 
-### `Optional` roomId
+### plugins
 
-• **roomId**? : *undefined | string*
+• `Optional` **plugins**: Array\<[PluginType](plugin.plugintype.md)[]>
 
-Defined in satellite/satellite.interface.ts:12
-
-___
-
-### `Optional` state
-
-• **state**? : *[StateType](state.statetype.md)*
-
-Defined in satellite/satellite.interface.ts:16
+*Defined in [src/core/satellite/satellite.interface.ts:14](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/satellite/satellite.interface.ts#L14)*
 
 ___
 
-### `Optional` variables
+### room
 
-• **variables**? : *`Array<VariableType[]>`*
+• `Optional` **room**: [RoomType](room.roomtype.md)
 
-Defined in satellite/satellite.interface.ts:15
+*Defined in [src/core/satellite/satellite.interface.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/satellite/satellite.interface.ts#L13)*
+
+___
+
+### roomId
+
+• `Optional` **roomId**: undefined \| string
+
+*Defined in [src/core/satellite/satellite.interface.ts:12](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/satellite/satellite.interface.ts#L12)*
+
+___
+
+### state
+
+• `Optional` **state**: [StateType](state.statetype.md)
+
+*Defined in [src/core/satellite/satellite.interface.ts:16](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/satellite/satellite.interface.ts#L16)*
+
+___
+
+### variables
+
+• `Optional` **variables**: Array\<[VariableType](variable.variabletype.md)[]>
+
+*Defined in [src/core/satellite/satellite.interface.ts:15](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/satellite/satellite.interface.ts#L15)*

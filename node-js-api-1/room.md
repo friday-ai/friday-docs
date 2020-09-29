@@ -1,22 +1,20 @@
-# room
+**friday-server**
 
-> [**friday-server**](./)
+> [README](../README.md) / [Globals](../globals.md) / room
 
-[Globals](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/globals.md) / [room](room.md) /
+# Module: room
 
-## External module: room
+## Index
 
-#### Index
+### Classes
 
-**Classes**
+* [Room](../classes/room.room-1.md)
 
-* [Room](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/classes/room.room-1.md)
+### Interfaces
 
-**Interfaces**
+* [RoomType](../interfaces/room.roomtype.md)
 
-* [RoomType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/room.roomtype.md)
-
-**Functions**
+### Functions
 
 * [create](room.md#create)
 * [destroy](room.md#destroy)
@@ -24,135 +22,140 @@
 * [getById](room.md#getbyid)
 * [update](room.md#update)
 
-### Functions
+## Functions
 
-#### create
+### create
 
-▸ **create**\(`room`: [RoomType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/room.roomtype.md)\): _`Promise<RoomType>`_
+▸ **create**(`room`: [RoomType](../interfaces/room.roomtype.md)): Promise\<[RoomType](../interfaces/room.roomtype.md)>
 
-Defined in room/room.create.ts:19
+*Defined in [src/core/room/room.create.ts:20](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/room/room.create.ts#L20)*
 
 Create a room.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.room.create({
    id: 'c1124b18-6246-4e4b-8f8b-37ec0f2af4bf',
    name: 'A room sample',
    houseId: '0f1ff0ef-3969-4de4-84bc-84fd7ab18194'
 });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `room` | [RoomType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/room.roomtype.md) | A room object. |
+Name | Type | Description |
+------ | ------ | ------ |
+`room` | [RoomType](../interfaces/room.roomtype.md) | A room object. |
 
-**Returns:** _`Promise<RoomType>`_
+**Returns:** Promise\<[RoomType](../interfaces/room.roomtype.md)>
 
 Resolve with created room.
 
-#### destroy
+___
 
-▸ **destroy**\(`id`: string\): _`Promise<void>`_
+### destroy
 
-Defined in room/room.destroy.ts:14
+▸ **destroy**(`id`: string): Promise\<void>
+
+*Defined in [src/core/room/room.destroy.ts:13](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/room/room.destroy.ts#L13)*
 
 Destroy a room.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.room.destroy('c61a79e0-fb49-43be-bd45-507864de978f');
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `id` | string | Id of room. |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of room. |
 
-**Returns:** _`Promise<void>`_
+**Returns:** Promise\<void>
 
-#### getAll
+___
 
-▸ **getAll**\(`options?`: `GetOptions`\): _`Promise<RoomType[]>`_
+### getAll
 
-Defined in room/room.getAll.ts:26
+▸ **getAll**(`options?`: GetOptions): Promise\<[RoomType](../interfaces/room.roomtype.md)[]>
+
+*Defined in [src/core/room/room.getAll.ts:25](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/room/room.getAll.ts#L25)*
 
 Get all rooms.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.room.getAll({
    scope: '',
    take: 20,
    skip: 0
  });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `options?` | `GetOptions` | Options of the query. |
+Name | Type | Description |
+------ | ------ | ------ |
+`options?` | GetOptions | Options of the query. |
 
-**Returns:** _`Promise<RoomType[]>`_
+**Returns:** Promise\<[RoomType](../interfaces/room.roomtype.md)[]>
 
 Resolve with room array.
 
-#### getById
+___
 
-▸ **getById**\(`id`: string, `scope?`: undefined \| string\): _`Promise<RoomType>`_
+### getById
 
-Defined in room/room.getById.ts:16
+▸ **getById**(`id`: string, `scope?`: undefined \| string): Promise\<[RoomType](../interfaces/room.roomtype.md)>
+
+*Defined in [src/core/room/room.getById.ts:15](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/room/room.getById.ts#L15)*
 
 Get a room by id.
 
-**`example`**
-
-```text
+**`example`** 
+````
 friday.room.getById('4fdc2756-7303-47ca-b91d-6d0805165004', 'full');
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `id` | string | Id of room. |
-| `scope?` | undefined \| string | Scope option. \(Optional\) |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of room. |
+`scope?` | undefined \| string | Scope option. (Optional) |
 
-**Returns:** _`Promise<RoomType>`_
+**Returns:** Promise\<[RoomType](../interfaces/room.roomtype.md)>
 
 Resolve with room.
 
-#### update
+___
 
-▸ **update**\(`room`: [RoomType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/room.roomtype.md)\): _`Promise<RoomType>`_
+### update
 
-Defined in room/room.update.ts:18
+▸ **update**(`id`: string, `room`: [RoomType](../interfaces/room.roomtype.md)): Promise\<[RoomType](../interfaces/room.roomtype.md)>
+
+*Defined in [src/core/room/room.update.ts:20](https://github.com/friday-ai/friday/blob/cd1d9b5/server/src/core/room/room.update.ts#L20)*
 
 Update a room.
 
-**`example`**
-
-```text
-friday.room.update({
+**`example`** 
+````
+friday.room.update(
+'31f61b90-27cc-4bf6-9855-4cc59526157b',
+{
   id: '31f61b90-27cc-4bf6-9855-4cc59526157b'
   name: 'room update'
 });
-```
+````
 
-**Parameters:**
+#### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `room` | [RoomType](https://github.com/friday-ai/friday-docs/tree/7469fd0637aa28a674d6c68645188ee863701e30/node-js-api-1/interfaces/room.roomtype.md) | A room object. |
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | Id of room |
+`room` | [RoomType](../interfaces/room.roomtype.md) | A room object. |
 
-**Returns:** _`Promise<RoomType>`_
+**Returns:** Promise\<[RoomType](../interfaces/room.roomtype.md)>
 
 Resolve with updated room.
-
